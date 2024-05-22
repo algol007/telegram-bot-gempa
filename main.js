@@ -13,7 +13,6 @@ const sayHi = new RegExp(`^${prefix}hi$`);
 const botGempa = new RegExp(`^${prefix}infogempa$`);
 
 algolBot.onText(sayHi, async (callback) => {
-  console.log("first", callback);
   algolBot.sendMessage(callback.from.id, "Hello");
 });
 
